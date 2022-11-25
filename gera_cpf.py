@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from random import randint
-import gerador_cpf
+
 
 
 
@@ -46,7 +46,7 @@ def gerar():
 
         cpf['text'] = new_cpf
 
-        
+
 bnt = Button(window, text="Generate CPF", command=gerar, bg=color2, fg=color3, font=('Arial', 15, 'bold'), 
                     relief=RAISED, overrelief=SUNKEN)
 bnt.place(x=150,y=70)
