@@ -15,6 +15,14 @@ window.geometry("400x200")          # escolho o tamanho da janela
 window.resizable(width= False, height= False)       # impeço do usuário mudar o tamanho da tela
 
 
+text_generator = Label(window,text="CPF Generator", bg=color3, fg=color1, font=('Arial', 20, 'bold'))
+text_generator.place(x=75,y=20)
+
+
+
+
+
+
 window.mainloop()
 
 
