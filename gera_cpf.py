@@ -14,13 +14,15 @@ window = Tk()            # chama a biblioteca tkinter
 window.title("")         # deixa o título da janela vazia
 window.configure(bg=color3)         # escolho a cor de fundo da janela 
 window.geometry("400x200")          # escolho o tamanho da janela
-window.resizable(width= False, height= False)       # impeço do usuário mudar o tamanho da tela
+window.resizable(width=False,height=False)       # impeço do usuário mudar o tamanho da tela
 
 
 text_generator = Label(window,text="CPF Generator", bg=color3, fg=color1, font=('Ivy',20,'bold')) # definindo o texto, a fonte e a cor da fundo da tela
 text_generator.place(x=75,y=20)
 
 def gerar():
+
+        # Função para gerar o CPF
         num = str(randint(100000000, 999999999))
 
 
@@ -47,18 +49,19 @@ def gerar():
         cpf['text'] = new_cpf
 
 
-bnt = Button(window, text="Generate CPF", command=gerar, bg=color2, fg=color3, font=('Arial', 15, 'bold'), 
+
+bnt = Button(window, text="Generate CPF", command=gerar, bg=color2, fg=color3, font=('Arial', 15, 'bold'),  # definições do botão
                     relief=RAISED, overrelief=SUNKEN)
-bnt.place(x=150,y=70)
+bnt.place(x=150,y=80) # tamanho do botão
 
 
 
-cpf = Label(window, text="", bg=color3, fg=color2, font=('Arial', 30, 'bold'))
+cpf = Label(window, text="", bg=color3, fg=color2, font=('Arial', 30, 'bold'))  # definindo a parte visual do botão cpf
 cpf.place(x=85,y=120)
 
 
 
-window.mainloop()
+window.mainloop()  # impeço que o código seja gerado apenas uma única vez
 
 
 
