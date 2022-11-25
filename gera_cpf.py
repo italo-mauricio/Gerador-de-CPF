@@ -8,9 +8,11 @@ color2 = "#008c00"  # green
 color3 = "#000000"  # black
 
 
-window = Tk()
-window.title("")
-window.configure(bg=color3)
+window = Tk()            # chama a biblioteca tkinter
+window.title("")         # deixa o título da janela vazia
+window.configure(bg=color3)         # escolho a cor de fundo da janela 
+window.geometry("400x200")          # escolho o tamanho da janela
+window.resizable(width= False, height= False)       # impeço do usuário mudar o tamanho da tela
 
 
 window.mainloop()
